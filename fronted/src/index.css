@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+}
+
+nav button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #dbeafe;
+}
+
+.home-page, .result-page {
+  text-align: center;
+  color: #fff;
+}
+
+.home-page button, .result-page button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.home-page button:hover, .result-page button:hover {
+  transform: scale(1.05);
+}
+
+.question-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 500px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.options button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.options button:hover {
+  transform: scale(1.05);
+  background: #1e40af;
+}
+
+.progress-bar {
+  height: 8px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #10b981;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
